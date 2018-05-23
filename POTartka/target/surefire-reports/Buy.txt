@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Buy
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.765 s <<< FAILURE! - in Buy
+buy(Buy)  Time elapsed: 10.548 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //div[@class = 'search-view-more']/a[@href = 'http://tartka.com.ua?s=�?утаж&post_type=product']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'EPUADNIW0249', ip: '10.28.9.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 59488, moz:profile: C:\Users\Nataliya_Tarkovska..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 1ddd921f-3a1c-4d9f-a833-d578861ca31b
+*** Element info: {Using=xpath, value=//div[@class = 'search-view-more']/a[@href = 'http://tartka.com.ua?s=�?утаж&post_type=product']}
+	at Buy.buy(Buy.java:31)
+

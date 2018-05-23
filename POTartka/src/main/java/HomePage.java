@@ -16,7 +16,7 @@ public class HomePage {
     @FindBy(xpath = "//div[@class = 'form-search-right']/input[@type = 'text']")
     private WebElement search;
 
-    @FindBy(xpath = "//div[@class = 'search-view-more']/a[@href = 'http://tartka.com.ua?s=сутаж&post_type=product']")
+    @FindBy(xpath = "//div[@class = 'search-view-more']/a[@href = 'http://tartka.com.ua?s=soutage&post_type=product']")
     private WebElement searchFinish;
 
     public HomePage(WebDriver driver) {

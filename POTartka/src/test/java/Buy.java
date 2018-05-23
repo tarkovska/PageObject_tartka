@@ -21,7 +21,7 @@ public class Buy {
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://tartka.com.ua/ru/");
+        driver.get("http://tartka.com.ua/en/");
     }
 
     @Test
@@ -45,7 +45,7 @@ public class Buy {
         orderPage.clickPlaceOrder();
         CheckInPage checkInPage = new CheckInPage(driver);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        Assert.assertEquals(checkInPage.getNotification(), "Спасибо. Ваш заказ был принят.");
+        Assert.assertEquals(checkInPage.getNotification(), "Thank you. Your order has been received.");
     }
 
 }
