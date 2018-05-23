@@ -14,7 +14,7 @@ public class ProductPage {
     @FindBy(name = "add-to-cart")
     private WebElement addToCart;
 
-    @FindBy(xpath = "//div[@class = 'woocommerce-message']/a[@href = 'http://tartka.com.ua/ru/cart/']")
+    @FindBy(xpath = "//div[@class = 'woocommerce-message']/a[@href = 'http://tartka.com.ua/en/cart-2/']")
     private WebElement goToCart;
 
     public ProductPage(WebDriver driver) {

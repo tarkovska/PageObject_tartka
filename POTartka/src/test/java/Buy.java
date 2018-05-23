@@ -28,7 +28,7 @@ public class Buy {
     public void buy(){
         HomePage homePage = new HomePage(driver);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        homePage.search("сутаж");
+        homePage.search("soutage");
         ProductsListPage productsListPage = new ProductsListPage(driver);
         productsListPage.clickElement();
         ProductPage productPage = new ProductPage(driver);
