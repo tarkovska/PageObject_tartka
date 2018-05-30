@@ -1,10 +1,12 @@
 /**
  * Created by Nataliya_Tarkovska on 3/28/2018.
  */
+import com.gargoylesoftware.htmlunit.BrowserVersion;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -17,8 +19,8 @@ public class Buy {
 
     @BeforeClass
     public static void setup(){
-        //  System.setProperty("webdriver.gecko.driver", "geckodriver/geckodriver.exe");
-        driver = new FirefoxDriver();
+        //System.setProperty("webdriver.gecko.driver", "geckodriver/geckodriver.exe");
+        driver = new HtmlUnitDriver(BrowserVersion.FIREFOX_38);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://tartka.com.ua/en/");
